@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <!-- Vibrant Netflix red gradient for the front ribbons -->
+    <linearGradient id="brightRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF1E27" />
+      <stop offset="50%" stop-color="#E50914" />
+      <stop offset="100%" stop-color="#800000" />
+    </linearGradient>
+
+    <!-- Darker crimson gradient for the back ribbons to create depth -->
+    <linearGradient id="darkRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#990000" />
+      <stop offset="100%" stop-color="#330000" />
+    </linearGradient>
+
+    <!-- Deep drop shadow on all sides of the front ribbons for 3D overlap -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="15" flood-color="#000" flood-opacity="0.85"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#000000" />
+
+  <!-- Translate 35px right to perfectly center the 330px wide shape in 400px canvas -->
+  <g transform="translate(35, 50)">
+    
+    <!-- LAYER 1 (BACK) -->
+    <!-- Far Left Ribbon (slopes down to the right \) -->
+    <polygon points="20,0 90,0 150,300 80,300" fill="url(#darkRed)" />
+    
+    <!-- Middle Right Ribbon (slopes down to the right \) from the center peak -->
+    <polygon points="140,0 210,0 270,300 200,300" fill="url(#darkRed)" />
+
+    <!-- LAYER 2 (FRONT) -->
+    <!-- Middle Left Ribbon (slopes UP to the right /) from the left valley to center peak -->
+    <!-- It perfectly overlaps the bottom of the Far Left Ribbon -->
+    <polygon points="140,0 210,0 150,300 80,300" fill="url(#brightRed)" filter="url(#shadow)" />
+    
+    <!-- Far Right Ribbon (slopes UP to the right /) from the right valley to top right -->
+    <!-- It perfectly overlaps the bottom of the Middle Right Ribbon -->
+    <polygon points="260,0 330,0 270,300 200,300" fill="url(#brightRed)" filter="url(#shadow)" />
+
+  </g>
+</svg>
