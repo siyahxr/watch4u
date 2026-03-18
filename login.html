@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Watch4U</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="auth-page">
+    <div class="landing-container">
+        <!-- Reusing the collage background for consistency -->
+        <div class="collage-wrapper auth-bg">
+            <div class="collage-column up">
+                <div class="collage-item"><img src="https://images.ctfassets.net/4cd45et68cgf/7H7WjekFNEd8sY5TCttTID/347480a2e127ed1ca8b15c0940ecdb86/ST4_Main_LocationPayoff_Vertical_27x40_RGB_TR.jpg" alt=""></div>
+                <div class="collage-item"><img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYVg6nLChUJJeP9SlGWsIukEKUZ_TlzGoqmGbustWdB_GPLnj0kLUHqwcM2w21ekTUVZE4c0x96ngbc9aX4Abe9INcCMzP0c4y1V.jpg" alt=""></div>
+                <div class="collage-item"><img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXb5isLW0ysHm4fsoZOZRmi1MoTw4L4YKK0oGP-hAi8ZPQZcrwlSz-Mh_IbyHKr7QPJuM3DGiMqnGyanyhWqW_rYaIkx4h-gafVM.jpg" alt=""></div>
+            </div>
+            <div class="collage-column down">
+                <div class="collage-item"><img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABSC9u3LgLcj9FvDcbR_3DzuwK9EFu69hqj5lnohV0QUIscrVzhUQY_Oo33NpZ-C5PRBJHlUQSH-jl55-itvnqcTGBX2XxZ6uyC9Y.jpg" alt=""></div>
+                <div class="collage-item"><img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABVd1JpjFZVtpEMe7517nwfvC9LAwdnl-0FvxJCGkjIlrr7YMeslDopQ_Eoli1uMBl53hU62lVabIOJHrZ6YkwLESsOdbz4xH5n1L.jpg" alt=""></div>
+                <div class="collage-item"><img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABbArrmMxMyoLhZJTxEu3YKRf8wXLI5tlo7dWeAP3K0Y3cPzoMWBgsSlA-5GaN9SPtFyVIsy4y0EJZSsjxuigCXWF-GZ8FjbxMFFK.jpg" alt=""></div>
+            </div>
+        </div>
+        
+        <div class="landing-overlay"></div>
+
+        <!-- Auth Form -->
+        <div class="auth-card">
+            <div class="logo">
+                <img src="watch4u_logo.svg" alt="Watch4U Logo" class="nav-logo">
+                <span>Watch4U</span>
+            </div>
+            <h2>Welcome Back</h2>
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <input type="email" id="email" required placeholder=" ">
+                    <label for="email">Email Address</label>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" required placeholder=" ">
+                    <label for="password">Password</label>
+                </div>
+                <button type="submit" class="auth-submit-btn">Login</button>
+            </form>
+            <p class="auth-footer">New to Watch4U? <a href="/signup">Sign up now</a></p>
+        </div>
+    </div>
+    <script src="auth.js"></script>
+</body>
+</html>

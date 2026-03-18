@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Watch4U</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="dashboard-page">
+    <div class="dashboard-container">
+        <!-- Background Movie Grid -->
+        <div class="dashboard-bg-grid">
+            <div class="movie-poster"><img src="https://images.ctfassets.net/4cd45et68cgf/7H7WjekFNEd8sY5TCttTID/347480a2e127ed1ca8b15c0940ecdb86/ST4_Main_LocationPayoff_Vertical_27x40_RGB_TR.jpg" alt=""></div>
+            <div class="movie-poster"><img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYVg6nLChUJJeP9SlGWsIukEKUZ_TlzGoqmGbustWdB_GPLnj0kLUHqwcM2w21ekTUVZE4c0x96ngbc9aX4Abe9INcCMzP0c4y1V.jpg" alt=""></div>
+            <div class="movie-poster"><img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXb5isLW0ysHm4fsoZOZRmi1MoTw4L4YKK0oGP-hAi8ZPQZcrwlSz-Mh_IbyHKr7QPJuM3DGiMqnGyanyhWqW_rYaIkx4h-gafVM.jpg" alt=""></div>
+            <div class="movie-poster"><img src="https://images.ctfassets.net/4cd45et68cgf/7Bmq4Rpob9hr3c1IzGFfnN/ced62004cc73f800e0c6ca1d04d6063f/Wednesday_Teaser_Final_Flat_2021_02_17.jpg" alt=""></div>
+            <div class="movie-poster"><img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABSC9u3LgLcj9FvDcbR_3DzuwK9EFu69hqj5lnohV0QUIscrVzhUQY_Oo33NpZ-C5PRBJHlUQSH-jl55-itvnqcTGBX2XxZ6uyC9Y.jpg" alt=""></div>
+            <div class="movie-poster"><img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABVd1JpjFZVtpEMe7517nwfvC9LAwdnl-0FvxJCGkjIlrr7YMeslDopQ_Eoli1uMBl53hU62lVabIOJHrZ6YkwLESsOdbz4xH5n1L.jpg" alt=""></div>
+            <div class="movie-poster"><img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABbArrmMxMyoLhZJTxEu3YKRf8wXLI5tlo7dWeAP3K0Y3cPzoMWBgsSlA-5GaN9SPtFyVIsy4y0EJZSsjxuigCXWF-GZ8FjbxMFFK.jpg" alt=""></div>
+            <div class="movie-poster"><img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXV9zVUNUQknkR_hsWRW7N1SyUKGuBb2y5948099XRvI4TZoJYsNmcfDxixNeEIR7Zd-GuFyFo_BYBB-vD6O_H5laCWPL4PdMEmT.jpg" alt=""></div>
+        </div>
+
+        <div class="dashboard-overlay"></div>
+
+        <nav class="main-nav dashboard-nav">
+            <div class="logo">
+                <img src="watch4u_logo.svg" alt="Watch4U Logo" class="nav-logo">
+                <span>Watch4U</span>
+            </div>
+            <div class="user-profile">
+                <span id="userName">User</span>
+                <button id="logoutBtn" class="logout-link">Logout</button>
+            </div>
+        </nav>
+
+        <main class="dashboard-content">
+            <div class="hero-card">
+                <h1 class="gradient-text">Welcome to the Community</h1>
+                <p class="hero-subtext">
+                    If you want to watch films and more with your friends, download the application now!
+                </p>
+                <div class="hero-actions">
+                    <a href="https://www.dropbox.com/scl/fi/4v914xngp6i0zmhajjhm9/Watch-4-U.rar?rlkey=cujqujig5lu23mu8y7g31yc6e&st=cw43anpm&dl=1" class="download-btn dashboard-btn-large">DOWNLOAD APPLICATION</a>
+                    <button class="secondary-btn">Create Private Room</button>
+                    <button class="secondary-btn">Invite Friends</button>
+                </div>
+            </div>
+
+            <!-- This is where the user "sees" the database as requested -->
+            <div class="status-panel">
+                <div class="status-item">
+                    <span class="status-label">Account Status</span>
+                    <span class="status-value active">Premium Verified</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Database Connection</span>
+                    <span class="status-value active">Cloudflare D1 Linked</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Sync Status</span>
+                    <span class="status-value">Up to Date</span>
+                </div>
+            </div>
+
+            <!-- Database View Section -->
+            <div class="database-view">
+                <h3>Member Community</h3>
+                <div class="user-list">
+                    <div class="user-item">
+                        <div class="user-avatar">AD</div>
+                        <div class="user-info">
+                            <span class="user-name">Alex Davidson</span>
+                            <span class="user-time">Active Now</span>
+                        </div>
+                    </div>
+                    <div class="user-item">
+                        <div class="user-avatar">ST</div>
+                        <div class="user-info">
+                            <span class="user-name">Sarah Taylor</span>
+                            <span class="user-time">2m ago</span>
+                        </div>
+                    </div>
+                    <div class="user-item">
+                        <div class="user-avatar">MR</div>
+                        <div class="user-info">
+                            <span class="user-name">Mike Ross</span>
+                            <span class="user-time">15m ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
